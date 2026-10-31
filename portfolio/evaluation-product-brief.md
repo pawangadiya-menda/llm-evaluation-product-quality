@@ -1,45 +1,26 @@
-# Product Brief: LLM Evaluation & Product Quality
+# Evaluation Product Brief
 
 ## Problem
+Teams shipping LLM features need a repeatable way to determine whether a release improves the user experience without introducing unacceptable regressions.
 
-Teams shipping LLM-powered features often rely on anecdotal review or a single aggregate model score. These approaches make it difficult to detect systematic failures, understand why an agent failed, or decide whether a change is safe to release.
+## Users
+- Product managers deciding whether a model or prompt change is ready.
+- Engineers diagnosing workflow failures.
+- Quality and operations teams monitoring regressions.
+- Researchers evaluating model behavior against task-specific criteria.
 
-## Product opportunity
+## Jobs to be done
+- Understand the most consequential failure modes.
+- Compare candidate versions on a stable test set.
+- Distinguish a genuine quality gain from evaluator noise.
+- Make a defensible launch, rollback, or iteration decision.
 
-Create a repeatable evaluation workflow that connects product requirements, representative test inputs, execution traces, evaluation rubrics, and release decisions.
+## Proposed success criteria
+Success should be defined per product. Candidate measures include task success, critical-error rate, evaluator-human agreement, regression rate, latency, and cost per successful task.
 
-## Target users
-
-- AI Product Managers responsible for quality and release readiness
-- ML and application engineers improving LLM workflows
-- Evaluation and QA specialists building reliable test suites
-
-## Core workflow
-
-1. Define expected outcomes and unacceptable failure modes.
-2. Build a representative dataset covering realistic and edge-case inputs.
-3. Inspect traces to locate failure points across context, retrieval, orchestration, and tool execution.
-4. Translate requirements into deterministic checks and rubric-based judges.
-5. Compare evaluator labels with human-reviewed examples.
-6. Prioritize remediation by severity, frequency, and user impact.
-7. Run regression evaluations before release.
-
-## Success measures
-
-- Critical failure detection rate
-- Agreement between model judges and human reviewers
-- Evaluation coverage across user-input dimensions
-- Regression rate between candidate releases
-- Time from failure discovery to validated remediation
-
-## Product principles
-
-- Treat evaluator output as evidence, not ground truth.
-- Separate development, calibration, and held-out test examples.
-- Prefer deterministic checks for objectively measurable criteria.
-- Use model judges only with explicit rubrics and validation.
-- Make release decisions using segmented results, not only averages.
-
-## Scope boundaries
-
-This brief describes the product framing and learning objectives for this portfolio project. It does not claim that the accompanying example assets were all independently created by the repository owner.
+## Guardrails
+- No release decision based solely on an unvalidated LLM judge.
+- Preserve a held-out test set.
+- Review severe failures individually.
+- Report uncertainty and dataset limitations.
+- Do not claim an improvement without recorded experiment evidence.

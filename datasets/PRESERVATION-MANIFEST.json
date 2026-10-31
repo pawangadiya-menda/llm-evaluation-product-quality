@@ -1,0 +1,18 @@
+{
+  "note": "SHA-256 hashes for dataset files as extracted from the uploaded archive. Dataset contents were not edited.",
+  "files": {
+    "regression-dataset.csv": "aa14cdd4bc167af591ef94ddb4bc764860fb5a0156ce6d672a570110b7796838",
+    "week1-dataset.csv": "c3add70e57df85ec3e8edb0e4040420a52c6d206a29ab96f414a80edb8572f9e",
+    "week3-jargon.csv": "880c7dddfe304cc405b2c1c2974c4c7aa03cd1b3a260b7e538bcc3c307d437da",
+    "week3-currency.csv": "4cb36a257d0b29f2fb44d5e882e5a75cdca3778be3685f4d96d644cff8c81bdb",
+    "week3-dataset-60.csv": "047c4f3d5a4d488e0998707af6ea8fcb23fc486652b3c0050ed44acc888d803b",
+    "support-tickets.csv": "996438d4f26e33845e7878fc99f0b59c687ebc0bd6b383a86be6fa3a2d04d06b",
+    "week3-gap-analysis.md": "9754b3e17b7f356ea40a2825a622dd4ea256ad22d8c5bd5e38489176129ed073",
+    "week2-dataset-30.csv": "cf2f95c44d1dc310ce5c40d1b38dfefbb4cec7fa7b1d9dd5ed97c21c28dac78d",
+    "week3-metric-ranking.csv": "1af2ab585fbd2c8008d0fbc30033f3504aae1552aed0096d2a1c580450d395ce",
+    "week3-geography.csv": "5dc334f4bd9ea07142dc9b9e78d5ab4eff6db4e76a0f65c7a038521ade378768",
+    "README.md": "0df347783fff99fb245ef37fa925d611266328be5965e48d10f28e646d59d62f",
+    "week3-impossible.csv": "9366625e3cb2ec27485d84cce3bbeaf550d0e4eae1f1532b5d88b4a20d057e62",
+    "week3-historical.csv": "5f93981a07fd89e8c8192a84e9c5831bc206ce8cf5c264490ac8364100c3abc5"
+  }
+}
