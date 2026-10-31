@@ -1,0 +1,19 @@
+# Environment variables / secrets
+.env
+.env.*
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+.mcp.json
+
+# Build output
+dist/
